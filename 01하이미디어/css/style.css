@@ -1,42 +1,51 @@
 @charset"utf-8";
 
 /*header*/
-header#main_header{
-	width: 980px; 
-    margin: 0 auto;
-	position: relative;
-	border-bottom: 1px solid gray;
-}
-header#main_header>ul{position: absolute;right:0;top:0;}
-header#main_header>ul>li{	
-	float: left; 
-	margin: 0 auto; 
-	width: 100px; 
-	background-color: skyblue; 
-	border-right: 1px solid gray;
-	
+header#main_header{}
+	div.main_util{
+		border-bottom:1px solid #cdcdcdcd;
+	}
+	div.main_util>div.util_menu{
+		width: 980px;height: 20px;
+	/*	background-color:skyblue;*/
+		margin: 0 auto;
+	}
+	nav.util_wrap{
+		/*width: 300px;*//*핑크색 옆으로 튀어나와서 지움*/
+		/*background-color:pink; */
+		float:right;
+	}
+	nav.util_wrap>ul{}
+	nav.util_wrap>ul>li{float:left;position: relative;}
+	nav.util_wrap>ul>li:after{
+		content:"";
+		width: 1px;
+		height: 12px;
+		background-color: #000;
+		position:absolute;top:5px;left: 0;} /*Login옆에 줄나오게 하는거*/ 
+	nav.util_wrap>ul>li:first-child:after{content:""; display: none;}
+	nav.util_wrap>ul>li>a{display: block;padding: 0 15px; font-size:0.8em;}
 
-}
-header#main_header>h1{margin: 0 auto;width:200px;}
-header#main_header>div.main_util{margin: 0 auto;width: 200px;}
-header#main_header>div.main_util>div.util_menu{
-	width: 400px;height: 30px;
-	margin: 0 auto;
-	position: absolute; right:0;
-}
-header#main_header>div.main_util>div.util_menu>ul{
-	position: absolute;right: 0; 
-	top:0;
-}
-header#main_header>div.main_util>div.util_menu>ul>li{  
-}
-header#main_header>div.main_util>div.util_menu>ul>li>a{
-	border-right: 1px solid gray;
-	text-align: center;
-	color:white;
-	line-height:20px;
-	display: block;
-    padding:0 40px;
+	h1{text-align: center;padding:10px 0;}
 
-}
-header#main_header>div.main_util>div.util_menu>ul>li:last-child{border:none;}
+	/*main_menu*/
+	div.main_menu{background-color:#1d5da4;}
+	div.main_menu>nav.menu_wrap{width: 980px;height: 45px;margin: 0 auto; /*background-color: skyblue;*/}
+	div.main_menu>nav.menu_wrap>ul{}
+	div.main_menu>nav.menu_wrap>ul>li{
+		float:left; /*이거쓰면 위에 분모자(indtx.html 과로 안에다가 )한테 clearfix 를 줌 */
+		width: 16.666%;
+		border-right:1px solid #b3b3b3;
+	}
+	div.main_menu>nav.menu_wrap>ul>li:first-child{border-left:1px solid #b3b3b3; }/* br+ 단축키*/ 
+	div.main_menu>nav.menu_wrap>ul>li>a{display: block;text-align: center;line-height: 45px; color:white; font-weight:bold;}
+	div.main_menu>nav.menu_wrap>ul>li>a:hover{background-color:skyblue;color:#1d5da4;}
+
+	/*visual_wrap*/
+	div#visual_wrap{
+		height: 400px; 
+		background:#203969 url(../images/visual_bg.jpg) no-repeat center; /*url은 사진 불러오는거 */
+	}
+		.visual{width: 980px;margin: 0 auto;height: 400px;position: relative;}
+		.visual .img01{position: absolute;right:0;bottom:0;}/* position: absolute를쓰면 위에 분모자한테 position:relative써주기 */
+		.visual .img02{position: absolute;left:0;top:70px;}

@@ -49,3 +49,38 @@ header#main_header{}
 		.visual{width: 980px;margin: 0 auto;height: 400px;position: relative;}
 		.visual .img01{position: absolute;right:0;bottom:0;}/* position: absolute를쓰면 위에 분모자한테 position:relative써주기 */
 		.visual .img02{position: absolute;left:0;top:70px;}
+
+		/*visual icon*/
+		div#visual_icon{/*height: 196px;*/background-color:#eee;margin-bottom: 20px;}
+		div#visual_icon>div.icon_wrap{width: 980px;margin: 0 auto;}
+		div#visual_icon>div.icon_wrap>ul>li{float:left;width: 20%;height: 196px; }
+		div#visual_icon>div.icon_wrap>ul>li:nth-child(1){background-color: #7c99b9;}
+		div#visual_icon>div.icon_wrap>ul>li:nth-child(2){background-color: #4f74a1;}
+		div#visual_icon>div.icon_wrap>ul>li:nth-child(3){background-color: #4b8ce0;}
+		div#visual_icon>div.icon_wrap>ul>li:nth-child(4){background-color: #3db5f2;}
+		div#visual_icon>div.icon_wrap>ul>li:nth-child(5){background-color: #95c8ff;}
+		div#visual_icon>div.icon_wrap>ul>li>div.card{padding:15px;}
+		div#visual_icon>div.icon_wrap>ul>li>div.card>img{margin: 0 auto;}
+		div#visual_icon>div.icon_wrap>ul>li>div.card>div.card-body{text-align: center; padding-top:13px; color:white;}
+
+		div.icon_wrap li:hover{background-color: skyblue;}
+
+
+	/*section*/
+	section#section01{width: 980px;margin: 0 auto;} /*이것만 쓰면됨!*/
+	section#section01>ul{}
+	section#section01>ul>li{float:left;width: 310px;margin-right:25px;}
+	section#section01>ul>li:last-child{margin-right: 0;} /*옆으로 붙이는거*/ 
+	section#section01>ul>li>div.card{}
+	section#section01>ul>li>div.card>div.card-body{padding:17px;border: 1px solid #cdcd;border-top: none;}
+	section#section01>ul>li>div.card>div.card-body>h3.card-title{margin-bottom: 5px}
+
+	section#section02{width: 980px;margin: 0 auto;}
+	section#section02>ul{}
+	section#section02>ul>li{float:left;width: 310px;margin-right: 25px;}
+	section#section02>ul>li:last-child{margin-right:0;}
+	section#section02>ul>li>div.card{}
+	section#section02>ul>li>div.card>div.card-body{padding:17px;border: 1px solid #cdcd;}
+
+
+	

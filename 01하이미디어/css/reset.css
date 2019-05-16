@@ -2,6 +2,6 @@
 *{margin: 0;padding: 0; box-sizing:border-box;}
 li{list-style: none;}
 a:link,a:visited{color:black;}
-/*img{display: block}*/
+img{display: block}
 a{text-decoration: none;}
 .clearfix:after{content:"";clear: both;display: block;}

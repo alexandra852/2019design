@@ -63,11 +63,11 @@ header#main_header{}
 		div#visual_icon>div.icon_wrap>ul>li>div.card>img{margin: 0 auto;}
 		div#visual_icon>div.icon_wrap>ul>li>div.card>div.card-body{text-align: center; padding-top:13px; color:white;}
 
-		div.icon_wrap>ul>li:hover{background-color: skyblue;}
+		div.icon_wrap li:hover{background-color: skyblue;}
 
 
 	/*section*/
-	section#section01{width: 980px;margin: 0 auto;} /*이것만 쓰면됨!*/
+	section#section01{width: 980px;margin: 0 auto; margin-bottom:20px} /*이것만 쓰면됨!*/
 	section#section01>ul{}
 	section#section01>ul>li{float:left;width: 310px;margin-right:25px;}
 	section#section01>ul>li:last-child{margin-right: 0;} /*옆으로 붙이는거*/ 
@@ -75,12 +75,55 @@ header#main_header{}
 	section#section01>ul>li>div.card>div.card-body{padding:17px;border: 1px solid #cdcd;border-top: none;}
 	section#section01>ul>li>div.card>div.card-body>h3.card-title{margin-bottom: 5px}
 
-	section#section02{width: 980px;margin: 0 auto;}
+	section#section02{width: 980px;margin: 0 auto; margin-bottom:20px;}
 	section#section02>ul{}
-	section#section02>ul>li{float:left;width: 310px;margin-right: 25px;}
+	section#section02>ul>li{height: 165px;float:left;width: 310px;margin-right: 25px; overflow: hidden;border: 1px solid #cdcd;}
 	section#section02>ul>li:last-child{margin-right:0;}
-	section#section02>ul>li>div.card{}
-	section#section02>ul>li>div.card>div.card-body{padding:17px;border: 1px solid #cdcd;}
+	section#section02>ul>li>div.card{ position: relative;} 
+	section#section02>ul>li>div.card>div.card-body{padding:17px; position: relative;}
+	section#section02>ul>li>div.card>img{right: -15px; top: 10px; position: absolute;}
+	section#section02>ul>li>div.card>div.card-body>p.card-text{padding: 20px 0;}
+	section#section02>ul>li>div.card>div.card-body>p.card-link{color:blue;}
+
+
+	footer#main_footer{height: 147px;background-color: #5e5e5e;}
+
+	footer#main_footer>div.main02_util{height: 43px;background-color:#4d4d4d;}
+	footer#main_footer>div.main02_util>div.util02_menu{width: 980px;margin: 0 auto;}
+	footer#main_footer>div.main02_util>div.util02_menu>nav.util02_wrap{}
+	footer#main_footer>div.main02_util>div.util02_menu>nav.util02_wrap>ul{}
+	footer#main_footer>div.main02_util>div.util02_menu>nav.util02_wrap>ul>li{float:left; line-height: 43px;position: relative;}
+	footer#main_footer>div.main02_util>div.util02_menu>nav.util02_wrap>ul>li:after{content:"" ;width: 1px;height: 12px; position:absolute;top:15px;left: 0; background-color:#717171;}
+	footer#main_footer>div.main02_util>div.util02_menu>nav.util02_wrap>ul>li:first-child:after{content:"";display: none; }
+	footer#main_footer>div.main02_util>div.util02_menu>nav.util02_wrap>ul>li>a{display: block;padding: 0 15px; font-size:0.8em; color:#cccccc;}
+	footer#main_footer>div.main02_util>div.util02_menu>nav.util02_wrap>ul>li:first-child>a{padding-left: 0}
+
+
+	footer#main_footer>div.main04_util{
+	 width: 980px; height: 105px;
+	 margin: 0 auto;
+	
+	}
+	footer#main_footer>div.main04_util>h3.h3_wrap{
+		float: left;
+		line-height:105px;
+		display: block;
+	}
+	footer#main_footer>div.main04_util>address{
+		float: left;
+		font-style:normal;
+		display: block;
+		padding:15px 0 15px 65px;
+		font-size: 0.8em
+	}
+
+
+/*	address{font-style: normal;} 옆으로 눕힌걸 다시 고치는 법*/
+	
+
+
+
+
 
 
 	

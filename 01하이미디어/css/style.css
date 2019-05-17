@@ -63,7 +63,7 @@ header#main_header{}
 		div#visual_icon>div.icon_wrap>ul>li>div.card>img{margin: 0 auto;}
 		div#visual_icon>div.icon_wrap>ul>li>div.card>div.card-body{text-align: center; padding-top:13px; color:white;}
 
-		div.icon_wrap li:hover{background-color: skyblue;}
+		div.icon_wrap>ul>li:hover{background-color: skyblue;}
 
 
 	/*section*/

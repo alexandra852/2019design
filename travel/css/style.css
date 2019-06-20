@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+#wrap{	
+	height: 154px;
+	background-color: #fcfcfc;
+	border-bottom: 3px solid #0f73a7;
+
+	
+}
+#header_wrap{
+	height: 90px;
+	/*background-color: blue;*/
+	background: url(../img/bgi1.jpg)no-repeat center;
+
+}
+
+#header{width: 980px; 
+	/*background-color: red;*/
+	margin: 0 auto;
+	position: relative;}
+/*util*/
+.logo{
+	width: 280px;
+	top:20px;
+	position: absolute;
+	
+}
+img{display:block;}
+
+
+.box{width: 290px;height: 30px; 
+	background-color: #fff;
+	position: relative;
+	left: 280px;
+	top:30px;
+	border-radius:15px;
+}
+.tiile{
+	position: absolute;
+	font-weight:bold;
+	color:#333c41;
+	font-size:0.8em;
+	line-height:30px;
+	left:20px;
+
+}
+.box a{color:#6f7374;
+	position: absolute;
+	font-size: 0.5em;
+	left:80px;
+	top:8px;
+}
+
+.box img{
+	position: absolute;
+	right: 15px;
+	top: 3px;
+}
+
+.call{
+	position: absolute;
+	color:#fff;
+	font-weight:bold;
+	right:160px;
+	font-size:1.6em;
+	line-height: 30px;
+	
+ 
+
+}
+.icon_wrap{
+	width: 115px;
+	position: absolute;
+	right: 0;
+	
+	
+}
+.icon_wrap img{
+	display: block;
+	float: left;
+	margin-right:6px;
+}
+.icon_wrap img:last-child{margin-right:0;}
+
+/*gnb*/
+
+
+
+
+	
+
+ 

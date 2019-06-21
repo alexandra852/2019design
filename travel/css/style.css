@@ -1,92 +1,184 @@
-@charset "utf-8";
+@charset"utf-8";
 
-#wrap{	
-	height: 154px;
-	background-color: #fcfcfc;
-	border-bottom: 3px solid #0f73a7;
-
-	
-}
 #header_wrap{
-	height: 90px;
-	/*background-color: blue;*/
-	background: url(../img/bgi1.jpg)no-repeat center;
+	height:153px;
+	/*background-color:orange;*/
+	background-color: #fbfbfb;
+	border-bottom:  3px solid #0e73a7;
+
 
 }
-
-#header{width: 980px; 
-	/*background-color: red;*/
+.header{
+	height:90px;
+	/*background-color:pink;*/
+	background-image: url(../img/bgi01.jpg);
+}
+.util_menu_wrap{
+	width: 980px;height: 90px;
 	margin: 0 auto;
-	position: relative;}
-/*util*/
-.logo{
-	width: 280px;
-	top:20px;
-	position: absolute;
-	
-}
-img{display:block;}
-
-
-.box{width: 290px;height: 30px; 
-	background-color: #fff;
+	/*background-color:black;*/
 	position: relative;
-	left: 280px;
-	top:30px;
+}
+.logo{
+	position: absolute;
+	top:45px;
+	transform:translateY(-50%);
+}
+
+.box{
+	width: 290px; height: 30px;
+	background-color: #fff;
 	border-radius:15px;
-}
-.tiile{
 	position: absolute;
+	left: 280px; top: 45px;
+	position: relative;
+	transform:translateY(-50%);
+}
+
+.text{
+	position: absolute;
+	left:7px;
+	top:6px;
 	font-weight:bold;
-	color:#333c41;
 	font-size:0.8em;
-	line-height:30px;
-	left:20px;
+	color:#333c41
+
 
 }
-.box a{color:#6f7374;
+.box a{
 	position: absolute;
-	font-size: 0.5em;
-	left:80px;
+	right:150px;
 	top:8px;
+	font-size:0.6em;
 }
-
 .box img{
 	position: absolute;
-	right: 15px;
-	top: 3px;
-}
+	right: 10px;
+	top:8px;
 
+}
 .call{
-	position: absolute;
-	color:#fff;
-	font-weight:bold;
-	right:160px;
-	font-size:1.6em;
-	line-height: 30px;
-	
- 
-
-}
-.icon_wrap{
-	width: 115px;
+	color:white;
 	position: absolute;
 	right: 0;
-	
-	
+	font-weight:bold;
+	font-size:1.5em;
+	top:45px; left:630px; 
+	transform:translateY(-50%);
 }
-.icon_wrap img{
-	display: block;
-	float: left;
-	margin-right:6px;
+.icon{
+	position: absolute;
+	right: 0;
+	top:45px;
+	transform:translateY(-50%);
 }
-.icon_wrap img:last-child{margin-right:0;}
 
-/*gnb*/
+.gnb_menu_wrap{
+	height: 60px;
+	/*background-color: blue;*/
+}
+.gnb_menu{
+	width: 980px;height: 60px;
+	background-color: #fff;
+	margin: 0 auto;
+
+}
+.gnb_menu>ul{}
+.gnb_menu>ul>li{
+	width: 163.33px;
+	float:left;
+	border-right: 1px solid #cdcdcd;
+	background-color: #fbfbfb;
+}
+.gnb_menu li:nth-child(1){border-left: 1px solid #cdcdcd;}
+.gnb_menu>ul>li>a{
+	display:block;
+	text-align:center;
+	line-height: 60px;
+	font-weight:bold;
+	color:#152630;
+}
+
+.gnb_menu a:hover{background-color: #0e73a7; color: white}
 
 
+#contents_wrap{
+	height: 1236px;
+	background-image: url(../img/bgi2.jpg);
 
-
-	
-
+}
+.contents{
  
+	width: 980px;
+	height: 1152px;
+	/*background-color: orange;*/
+	margin: 0 auto; 
+	padding-top:56px;
+	position: relative;
+	
+}
+.contents_top{
+	width: 980px;height: 556px;
+	position: relative;
+	margin-bottom:16px;
+}
+.contents_top>li{
+	position: absolute;
+	width: 233px; height: 240px;
+	background-color: blue;
+	float: left;
+
+}
+.contents_top>li:nth-child(1){width: 482px; height: 300px; background-color: red;}
+.contents_top>li:nth-child(2){ width: 498px; height: 557px; background-color: white;right: 0;}
+.contents_top>li:nth-child(3){left: 0; top:316px;}
+.contents_top>li:nth-child(4){left: 249px;top:316px;}
+
+.contents_middle{
+	
+	
+	
+	margin-bottom:16px;
+}
+.contents_middle>li{
+	width: 233px; 
+	height: 240px;
+	float: left;
+	background-color: skyblue;
+	margin-right:16px;
+}
+.contents_middle>li:nth-child(4){margin-right:0;}
+}
+
+.contents_bottom{
+	margin-bottom:28px;
+}
+.contents_bottom>li{
+	width: 233px; height: 240px;
+	float:left;
+	background-color:black;
+	margin-right:16px;
+	color:white;
+}
+.contents_bottom>li:nth-child(4){margin-right:0;}
+
+#footer_wrap{
+	height: 84px; 
+	/*background-color: green;*/
+}
+.fooer{
+	width: 980px; height: 84px;
+	margin: 0 auto; 
+	/*background-color: #fff;*/
+}
+.fooer_ul{
+	margin-bottom:12px;
+}
+.fooer_ul>li{
+	float: left;
+	margin-right: 24px;
+	font-size:0.9em;
+
+}
+.fooer_ul>li:nth-child(2){font-weight: bold;}
+.fooer p{font-size:0.7em; color:#707070;}

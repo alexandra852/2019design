@@ -19,7 +19,10 @@
 						</div>
 						<div class="box">
 							<div class="text">SEARCH</div>
-							<a href="#">검색해주세요.</a>
+								<div class="boxtext">
+									<label for="text2"></label>
+									<input type="text" id="text2" placeholder="검색하세요.">			
+								</div>
 							<img src="img/icon1.png" alt="icon1">
 						</div>
 						<div class="call">+82 02 1234 5678</div>
@@ -49,7 +52,54 @@
 		<div id="contents_wrap">
 			<div class="contents">
 				<ul class="contents_top clearfix">
-					<li>1</li>
+					<li>
+						<div class="img_box">
+							<img src="img/img1.jpg" alt="img1">
+							<img src="img/img2.jpg" alt="img2">
+							<img src="img/img3.jpg" alt="img3">
+							<img src="img/img4.jpg" alt="img4">
+						</div>
+						<div class="golo">
+							<label for="golo" class="nanr">가고싶은 나라를 선택하세요 </label>
+							<select name="name" id="golo">
+								<option value="">선택하세요</option>
+								<option value="미국">미국</option>
+								<option value="일본">일본</option>
+								<option value="중국">중국</option>
+							</select>
+						</div>
+						<div class="f_cell">
+							<div class="cleft clearfix">
+								<label for="sdate" class="start">출발일</label>
+								<input type="date" id="sdate" name="">		
+							</div>
+							<div class="cright">
+								<label for="edate">도착일</label>
+								<input type="date" id="edate" name="">		
+							</div>
+						</div>
+						<div class="seat">
+							<label for="cgrade">좌석등급</label>
+							<select  id="cgrade">
+								<option value="일반석">일반석</option>
+								<option value="비지니스">비지니스</option>
+								<option value="이코노미">이코노미</option>
+							</select>
+						</div>
+						<div class="personnel">
+							<div class="adult">
+								<label for="num" >성인</label>
+								<input type="number" id="num" name="" placeholder="1">
+							</div>
+							<div class="child">
+								<label for="num">아이</label>
+								<input type="number" id="num" name="" placeholder="1">
+							</div>
+						</div>
+						<div class="button">검색하기</div>
+
+
+					</li>
 					<li>2</li>
 					<li>3</li>
 					<li>4</li>

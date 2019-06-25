@@ -99,6 +99,13 @@
 	font-weight:bold;
 	color:#152630;
 }
+.gnb_menu>ul>li>img{
+	display:block;
+	position: absolute;
+	top: 108px;
+	left: 835px;	
+
+}
 
 .gnb_menu a:hover{background-color: #0e73a7; color: white}
 
@@ -205,6 +212,29 @@ label{
 }
 
 /*인원*/
+.personnel{
+	position: absolute;	
+	width: 138px;	height: 53px;
+	top: 0;left: 138px;
+	}
+.personnel>.adult{
+	float: left;width: 50%;
+	padding-right:20px;
+	font-weight: bold;
+	
+}
+.personnel #num{
+	border: 2px solid #ededed;
+	color:#c7c7c7c7;
+	border-radius:5px;
+	width: 128px; height: 29px;
+	text-indent:2px;
+	width: 66px;height: 30px;
+}
+.personnel>.child{
+	float: right; width: 50%;
+	font-weight:bold;
+}
 
 /*button*/
 .button{
@@ -213,12 +243,76 @@ label{
 	left: 169px;
 	width: 278px; height: 38px;
 	background-color: #ea4f1f;
-	color:white; font-weight: bold;
-	border-right:5px;
+	border-radius:5px;
+}
+.button>a{
+	display:block;
 	text-align:center;
 	line-height:38px;
-	
+	color:white;
+	 font-weight: bold;
+
 }
+
+/*top_li3*/
+.top_li3{
+	position: relative;
+	background: url(../img/bgi3.jpg);
+	height: 100%;
+}
+.top_li3>a{
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 233px;height: 50px;
+	background-color:#152630;
+	color: white;
+}
+.top_li3>a>p{
+	color:white;
+	float:left;
+	line-height:50px;
+	margin-left:21px;
+	font-size:18px;
+
+}
+.top_li3>a>img{
+	display: block;
+	position: absolute;
+	right:10px;top:20px;
+}
+.top_li3>a>p:nth-child(2){color:#6ec662;margin-left:18px;}
+
+/*top_li4*/
+.top_li4{
+	position: relative;
+	background: url(../img/bgi4.jpg);
+	height: 100%;
+}
+.top_li4>a{
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 233px;height: 50px;
+	background-color:#152630;
+	color: white;
+}
+.top_li4>a>p{
+	color:white;
+	float:left;
+	line-height:50px;
+	margin-left:21px;
+	font-size:18px;
+
+}
+.top_li4>a>img{
+	display: block;
+	position: absolute;
+	right:10px;top:20px;
+}
+.top_li4>a>p:nth-child(2){color:#6ec662;margin-left:20px;}
+
+
 
 .contents_top>li:nth-child(1){width: 482px; height: 300px;}
 .contents_top>li:nth-child(2){ width: 498px; height: 557px; background-color: blue;right: 0;}
@@ -237,6 +331,17 @@ label{
 	margin-right:16px;
 }
 .contents_middle>li:nth-child(4){margin-right:0;}
+
+
+/*middle_li*/
+.contents_middle >.middle_li1{
+	background: url(../img/bgi5.jpg);
+	position: relative;
+}
+.contents_middle >.middle_li1>a{
+	position: absolute;
+	bottom:0px;
+	width: 233px;height: 65px; background-color:pink;
 }
 
 

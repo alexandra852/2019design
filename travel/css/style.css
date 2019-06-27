@@ -1,5 +1,7 @@
 @charset"utf-8";
 
+
+img{display: block;}
 #header_wrap{
 	height:153px;
 	/*background-color:orange;*/
@@ -35,9 +37,9 @@
 	transform:translateY(-50%);
 }
 
-.text{
+.box>.text{
 	position: absolute;
-	left:7px;
+	left:9px;
 	top:6px;
 	font-weight:bold;
 	font-size:0.8em;
@@ -276,11 +278,6 @@ label{
 	font-size:18px;
 
 }
-.top_li3>a>img{
-	display: block;
-	position: absolute;
-	right:10px;top:20px;
-}
 .top_li3>a>p:nth-child(2){color:#6ec662;margin-left:18px;}
 
 /*top_li4*/
@@ -305,11 +302,6 @@ label{
 	font-size:18px;
 
 }
-.top_li4>a>img{
-	display: block;
-	position: absolute;
-	right:10px;top:20px;
-}
 .top_li4>a>p:nth-child(2){color:#6ec662;margin-left:20px;}
 
 
@@ -333,7 +325,7 @@ label{
 .contents_middle>li:nth-child(4){margin-right:0;}
 
 
-/*middle_li*/
+/*middle_li1*/
 .contents_middle >.middle_li1{
 	background: url(../img/bgi5.jpg);
 	position: relative;
@@ -341,10 +333,67 @@ label{
 .contents_middle >.middle_li1>a{
 	position: absolute;
 	bottom:0px;
-	width: 233px;height: 65px; background-color:pink;
+	width: 233px;height: 65px; 
+	background-color:#529351;
 }
-
-
+.contents_middle >.middle_li1>a>.text{
+	position: absolute;
+	top: 15px;left:17px;
+	color: white;
+	font-size: 1em;
+}
+.contents_middle >.middle_li1>a>.star{
+	position: absolute;
+	top: 30px; left: 17px;
+	color:#e3a200;
+}
+.contents_middle >.middle_li1>a>.star>p{
+	float: left;
+}
+.contents_middle >.middle_li1>.button_l{
+	position: absolute;
+	left: 0;
+	top: 70px;
+}
+.contents_middle >.middle_li1>.button_r{
+	position: absolute;
+	right: 0;
+	top: 70px;
+}
+/*middle_li2*/
+.contents_middle>.middle_li2{
+	background :url(../img/bgi6.jpg);
+	position: relative;}
+.contents_middle >.middle_li2>a{
+	position: absolute;
+	bottom:0px;
+	width: 233px;height: 65px; 
+	background-color:#529351;
+}
+.contents_middle >.middle_li2>a>.text{
+	position: absolute;
+	top: 15px;left:17px;
+	color: white;
+	font-size: 1em;
+}
+.contents_middle >.middle_li2>a>.star{
+	position: absolute;
+	top: 30px; left: 17px;
+	color:#e3a200;
+}
+.contents_middle >.middle_li2>a>.star>p{
+	float: left;
+}
+.contents_middle >.middle_li2>.button_l{
+	position: absolute;
+	left: 0;
+	top: 70px;
+}
+.contents_middle >.middle_li2>.button_r{
+	position: absolute;
+	right: 0;
+	top: 70px;
+}
 /*contents_bottom*/
 .contents_bottom{margin-bottom:28px;}
 .contents_bottom>li{

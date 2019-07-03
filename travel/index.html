@@ -6,16 +6,26 @@
 	<title>TRAVEL</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/wow.js"></script>
+	<script>
+		var wow = new WOW();
+		wow.init();
+
+		// new WOW().init();
+	</script>
 </head>
 <body>
 	<div id="warp">
 
 		<header id="header_wrap">
 			<header class="header">
-				<div class="util_menu_wrap">
+				<div class="util_menu_wrap">		
 					<div class="util_menu">
 						<div class="logo">
-							<img src="img/logo.png" alt="logo">
+							<a href="index.html">
+								<img src="img/logo.png" alt="logo">
+							</a>
 						</div>
 						<div class="box">
 							<div class="text">SEARCH</div>
@@ -40,17 +50,26 @@
 							<li><a href="#">여행도시</a></li>
 							<li><a href="#">호텔예약</a></li>
 							<li><a href="#">렌트카</a></li>
-							<li><a href="#">여행TIP</a>
-								<img src="img/icon1.gif" alt="icon1">
+							<li><a href="#">여행TIP<img src="img/icon1.gif" alt="icon1"></a>
+								
 							</li>
-							<li><a href="#">회사소개</a></li>
+							<li><a href="subpage.html"class="on">회사소개</a>
+								<div class="bar_wrap">
+									<ul class="bar clearfix">
+										<li><a href="#">회사소개</a></li>
+										<li><a href="#">사업영역</a></li>
+										<li><a href="#">조직도</a></li>
+										<li><a href="#">채용정보</a></li>
+										<li><a href="#">오시는 길</a></li>
+									</ul>
+								</div>
+							</li>
 							<li><a href="#">커뮤니티</a></li>
 						</ul>
 					</div>
 				</div>
 			</header>
 		</header>
-
 		<div id="contents_wrap">
 			<div class="contents">
 				<ul class="contents_top clearfix">
@@ -108,13 +127,13 @@
 						하이미디어와 여행을 떠나자!</p>
 					</li>
 
-					<li class="top_li3">
+					<li class="top_li3 wow bounceInUp" data-wow-delay="0.2s">
 						<a href="#" class="clearfix">
 							<p>프랑스</p>
 							<p>W1,900,000~ </p>
 						</a>
 					</li>
-					<li class="top_li4">
+					<li class="top_li4 wow bounceInUp" data-wow-delay="0.3s">
 						<a href="#" class="clearfix">
 							<p>일본</p>
 							<p>W890,000~ </p>
@@ -124,7 +143,7 @@
 
 				<ul class="contents_middle clearfix">
 
-					<li class="middle_li1">
+					<li class="middle_li1 wow bounceInUp" data-wow-delay="0.4s">
 						<img src="img/button_r.png" alt="button_r"class="button_r">
 						<img src="img/button_l.png" alt="button_l"class="button_l">
 						<a href="#">				
@@ -135,7 +154,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="middle_li2">
+					<li class="middle_li2 wow bounceInUp" data-wow-delay="0.5s">
 						<img src="img/button_r.png" alt="button_r"class="button_r">
 						<img src="img/button_l.png" alt="button_l"class="button_l">
 						<a href="#">				
@@ -146,7 +165,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="middle_li3">
+					<li class="middle_li3 wow bounceInUp" data-wow-delay="0.6s">
 						<h3>TOKYO</h3>
 						<a href="#">				
 							<div class="text">20℃ 구름조금</div>
@@ -155,7 +174,7 @@
 							</div>
 						</a>
 					</li>
-					<li class="middle_li4 ">
+					<li class="middle_li4 wow bounceInUp" data-wow-delay="0.7s">
 						<div class="li4">
 							<p>"해외 여행은 처음이었는데<br>하이미디어 여행 덕분에 무사히 <br>다녀옷 수 있었어요."</p>
 							<p>프랑스 파리 자유 여행</p>
@@ -173,25 +192,25 @@
 					</li>
 				</ul>
 				<ul class="contents_bottom clearfix">
-					<li class="bottom_li1">
+					<li class="bottom_li1 wow bounceInUp" data-wow-delay="0.8s">
 						<h3>여행정보</h3>
 						<p>다양한 나라의 명소와 맛집 등 <br> 상제한 정보를 볼수 있습니다.</p>
 						<img src="img/icon8.gif" alt="icon8" class="icon8">
 						<img src="img/icon7.gif" alt="icon7" class="icon7">
 					</li>
-					<li class="bottom_li2">
+					<li class="bottom_li2 wow bounceInUp" data-wow-delay="0.9s">
 						<h3>맛집정보</h3>
 						<p>다양한 나라의 명소와 맛집 등 <br> 상제한 정보를 볼수 있습니다.</p>
 						<img src="img/icon9.gif" alt="icon9" class="icon9">
 						<img src="img/icon7.gif" alt="icon7" class="icon7">
 					</li>
-					<li class="bottom_li3">
+					<li class="bottom_li3 wow bounceInUp" data-wow-delay="1s">
 						<h3>맛집정보</h3>
 						<p>다양한 나라의 명소와 맛집 등 <br> 상제한 정보를 볼수 있습니다.</p>
 						<img src="img/icon10.gif" alt="icon10" class="icon10">
 						<img src="img/icon7.gif" alt="icon7" class="icon7">
 					</li>
-					<li class="bottom_li4">
+					<li class="bottom_li4 wow bounceInUp" data-wow-delay="1.2s">
 						<h3>여행정보</h3>
 						<p>다양한 나라의 명소와 맛집 등 <br> 상제한 정보를 볼수 있습니다.</p>
 						<img src="img/icon11.gif" alt="icon11" class="icon11">

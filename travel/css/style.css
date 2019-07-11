@@ -182,14 +182,16 @@ img{display: block;}
 		float: left;
 	}
 
-	.contents_top img{display:block;}
+	.contents_top img{display:block; cursor: pointer;}
 	label{
 		display: block;
 		padding:10px 0;
 	}
+
 	.contents_top>.top_li1{
 		background-color:white;
 	}
+	.boxWrap >div{display: none;}
 	/*가고싶은 나라를 선택하세요*/
 	.contents_top .golo{
 		position: absolute;

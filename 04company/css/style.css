@@ -2,6 +2,7 @@
 #main_header{
 	height: 1950px; 
 	background-color: lightgray;
+	position: relative;
 }
 #header_top{
 	width: 1260px; 
@@ -17,16 +18,147 @@
 	float: left;
 	background-color: #f00;
 }
-#header_top > #main_menu{float: right;background-color: #0f0;}
+#header_top > #main_menu{
+	float: right;
+	background-color: #0f0;
+}
 
 #main_menu>ul{}
 #main_menu>ul>li{float: left;}
-#main_menu>ul>li>a{display: block; line-height: 50px; padding: 0 30px; font-weight:bold;}
+#main_menu>ul>li>a{
+	display: block; 
+	line-height: 50px; 
+	padding: 0 30px;
+	font-weight:bold;
+}
 
 /*bxslider*/
 .slider_wrap{height: 1005px;}
 .slider_wrap ul li{height: 1005px;}
-.slider_wrap li.first{background:url(../images/main_img_01_001.jpg) no-repeat center;
-background-size:cover;}
-.slider_wrap li.second{background:url(../images/mainimg02.jpg) no-repeat center;
-background-size:cover;}
+.slider_wrap li.first{
+	background:url(../images/main_img_01_002.jpg) no-repeat center;
+	background-size:cover;
+}
+.slider_wrap li.second{
+	background:url(../images/main_img_01_001.jpg) no-repeat center;
+	background-size:cover;
+}
+.slider_wrap .slider_txt{
+	width: 700px; 
+	position: absolute; 
+	left:50%;
+	margin-left:-350px;
+	/*background-color: #fff;*/
+	top:30%;
+	color: white;
+	text-align:center;
+	/*background: rgba(255,255,255,0.3);*/
+	/*padding: 20px 20px 30px 20px;*/
+	/*box-shadow:0 0 10px black;*/
+}
+.slider_wrap h3{ 
+	font-size:3.5em;
+	text-shadow:0px 0px 8px #000;
+	 }
+.slider_wrap h3:after{
+	content:"";
+	display: block;
+	width: 300px;
+	height: 3px; 
+	background-color: #fff;
+	margin:20px auto;
+	}
+.slider_wrap p{}
+
+/*header content*/
+#main_header .content{
+	width: 1260px;
+	height: 1260px;
+	position: absolute;
+	bottom: 0;
+	background-color: white;
+	left: 50%;
+	margin-left:-630px;
+}
+
+#main_header .content li{
+	float: left;
+	height: 315px;
+	width: 25%;
+	border: 1px solid #000;
+}
+
+.content li.content1st{
+	background-color: #92c1d5;
+	padding-top:50px;
+	text-align: center;
+	font-weight: bold;
+	color:white;
+}
+.content li.content2st{position: relative;}
+.content li.content2st h2{position: absolute;top: 39px;height: 42px;}
+.content li.content2st p{position: absolute; top: 84px; height: 42px;}
+.content li.content2st .icon6{display: block;position: absolute; top: 0;}
+
+.content li.content5st{
+	background-color: #b8307c;
+	padding-top:50px;
+	text-align: center;
+	font-weight: bold;
+	color:white;
+}.content li.content6st{
+	background-color: #413d3e;
+	padding-top:50px;
+	text-align: center;
+	font-weight: bold;
+	color:white;
+}
+.content li.content7st{
+	position: relative;
+	width: 50% !important;   /*위쪽에 적은거보다 이걸 좀더 강력하게 넣은거??*/
+	color:white;
+}
+
+.content .card p{font-size:2em;}
+
+.content li.content8st{
+	height: 630px !important;
+	position: relative;
+	color:white;
+} 
+.content li.content9st{
+	width: 50% !important;
+	position: relative;
+	color:white;
+}
+.content li.content10st{
+	background-color: #204065;
+	padding-top:50px;
+	text-align: center;
+	font-weight: bold;
+	color:white;
+}
+.content li.content11st{
+	background-color: #995566;
+	padding-top:50px;
+	text-align: center;
+	font-weight: bold;
+	color:white;
+}
+.content li.content12st{
+	width: 50% !important;
+	position: relative;
+	color:white;
+}
+.content .card{
+	position: absolute;
+	top: 40px; left: 40px;
+}
+.content .card h3:after{
+	content:""; 
+	display:block; 
+	width: 30px;
+	height: 3px;
+	background-color: #fff;
+	margin:20px 0;
+}

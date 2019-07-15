@@ -6,23 +6,49 @@
    <title>cmt 메인화면</title>
    <link rel="stylesheet" href="css/reset.css">
    <link rel="stylesheet" href="css/jquery.bxslider.css">
+   <link rel="stylesheet" href="css/animate.css">
    <script src="js/jquery-3.3.1.min.js"></script>
    <script src="js/jquery.bxslider.js"></script>
+   <script src="js/wow.js"></script>
    <link rel="stylesheet" href="css/style.css">
    <script>
    	$(document).ready(function(){
-   		$(".slider").bxSlider({
+   		var mainstyle = $(".slider").bxSlider({
 
 				touchEnabled:false,
-
 				pager:false,
-
 				controls:false,
-
 				auto:true
-
    		});
+
+			$('.btn_prev').click(function(){
+				mainstyle.goToPrevSlide();
+				return false;
+			});
+
+			$('.btn_next').click(function(){
+				mainstyle.goToNextSlide();
+				return false;
+			}); 
+
+
+			var mainstyle2 = $(".slider2").bxSlider({
+   				touchEnabled:false,
+				pager:false,
+				controls:false,
+				auto:true
+   		});
+			$('.prev').click(function(){
+				mainstyle2.goToPrevSlide();
+				return false;
+			});
+			$('.next').click(function(){
+				mainstyle2.goToNextSlide();
+				return false;
+			}); 
    	});
+
+   	new WOW().init();
    </script>
 </head>
 <body>
@@ -31,12 +57,11 @@
          <img src="images/logo.png" alt="">
          <nav id="main_menu">
             <ul class="clearfix">
-               <li><a href="#">회사소개</a></li>
-               <li><a href="#">보안솔루션</a></li>
-               <li><a href="#">보안관제</a></li>
-               <li><a href="#">보안SI</a></li>
-               <li><a href="#">통합유지보수</a></li>
-               <li><a href="#">고객서비스</a></li>
+               <li><a href="#">소개</a></li>
+               <li><a href="#">객실안내</a></li>
+               <li><a href="#">포토갤러리</a></li>
+               <li><a href="#">예약안내</a></li>
+               <li><a href="#">오시는 길</a></li>
             </ul>
          </nav>
       </div>
@@ -45,44 +70,68 @@
       		<li class="first">
       			<div class="slider_txt">
       				<h3>We Build The World</h3>
-      				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, amet.</p>
+      				<p>고객님 들에게 내 집 같은 편안한 휴식을 제공하여<br> 하루를 묵더라도 오래 도록 잊혀지지않을 추억을 남겨드리기위해 최선을 다하겠습니다.</p>
       			</div>
       		</li>
       		<li class="second">
       			<div class="slider_txt">
       				<h3>We Build The World</h3>
-      				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, amet.</p>
+      				<p>고객님 들에게 내 집 같은 편안한 휴식을 제공하여<br> 하루를 묵더라도 오래 도록 잊혀지지않을 추억을 남겨드리기위해 최선을 다하겠습니다.</p>
       			</div>
       		</li>
       	</ul>
+      	<div class="btn_next">
+      		<img src="images/btn_next.png" alt="next">
+      	</div>
+      	<div class="btn_prev">
+      		<img src="images/btn_prev.png" alt="prev">
+      	</div>
+
       </div>
       <div class="content">
       	<ul class="clearfix">
-      		<li class="content1st">
+      		<li class="content1st wow fadeInUp" data-wow-delay="0.2s">
       				<img src="images/main_icon_01_01.png" alt="icon_01_01">
       				<p>새로운 소식</p>
         	</li>
-      		<li>
-      			<img src="images/main_img_01_01.jpg" alt="">
+      		<li class="content2st wow fadeInUp" data-wow-delay="0.4s">
+      			<img src="images/main_img_01_01.jpg" alt="img_01_01">
+      			<img src="images/main_icon_01_08.png" alt="icon_01_08" class="icon_01_08">
       		</li>
-      		<li class="content2st">
-      			<h2>뉴스</h2>
-      			<p>대학생4명이면 1명 할인 진행..</p>
-      		</li>
-      		<li>
-      			<img src="images/main_img_01_02.jpg" alt="">
-      		</li>
+      		<li class="content3st wow fadeInUp" data-wow-delay="0.6s">
+      		<h2>뉴스</h2>
+				<ul class="slider2">
+					<li class="clearfix">
+						<div class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sit.</div>
+						<div class="right"><img src="images/main_img_01_02.jpg" alt="01"></div>
+					</li>
+					<li class="clearfix">
+						<div class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sit.</div>
+						<div class="right"><img src="images/main_img_01_02.jpg" alt="01"></div>
+					</li>
+					<li class="clearfix">
+						<div class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, sit.</div>
+						<div class="right"><img src="images/main_img_01_02.jpg" alt="01"></div>
+					</li>
+				</ul>
+				<div class="btn">
+					<img src="images/main_icon_01_r.png" alt="icon_01_06" alt="이전" class="prev">
+					<img src="images/main_icon_01_l.png" alt="다음" class="next">
+				</div>
 
-      		<li class="content5st">
+      		</li>
+      	
+
+      		<li class="content5st wow fadeInUp" data-wow-delay="0.8s">
       				<img src="images/main_icon_01_02.png" alt="icon_01_02">
       				<p>회사소개</p>
 
         	</li>
-      		<li class="content6st">
+      		<li class="content6st wow fadeInUp" data-wow-delay="1s">
       				<img src="images/main_icon_01_03.png" alt="icon_01_03">
       				<p>투자정보</p>
         	</li>
-      		<li class="content7st">
+      		<li class="content7st wow fadeInUp" data-wow-delay="1.2s">
       			<img src="images/main_img_01_05.jpg" alt="">
       			<div class="card">
       				<h3>전력 및 에너지 플렌트</h3>
@@ -91,30 +140,30 @@
       		</li>
       		
 
-      		<li class="content8st">
+      		<li class="content8st wow fadeInUp" data-wow-delay="1.4s">
       			<img src="images/main_img_01_03.jpg" alt="img_01_03">
       			<div class="card">
       				<h3>전력 및 에너지 플렌트</h3>
       				<p>세상을 밝히는<br>빛과 에너지</p>
       			</div>
       		</li>
-      		<li class="content9st">
+      		<li class="content9st wow fadeInUp" data-wow-delay="1.6s">
       			<img src="images/main_img_01_04.jpg" alt="img_01_04">
       			<div class="card">
       				<h3>전력 및 에너지 플렌트</h3>
       				<p>세상을 밝히는<br>빛과 에너지</p>
       			</div>
       		</li>
-      		<li class="content10st">
+      		<li class="content10st wow fadeInUp" data-wow-delay="1.8s">
       				<img src="images/main_icon_01_04.png" alt="icon_01_03">
       				<p>투자정보</p>
         	</li>
-      		<li class="content11st">
+      		<li class="content11st wow fadeInUp" data-wow-delay="2s">
       				<img src="images/main_icon_01_05.png" alt="icon_01_03">
       				<p>투자정보</p>
         	</li>
 
-      		<li class="content12st">
+      		<li class="content12st wow fadeInUp" data-wow-delay="2.2s">
       			<img src="images/main_img_01_06.jpg" alt="img_01_04">
       			<div class="card">
       				<h3>전력 및 에너지 플렌트</h3>

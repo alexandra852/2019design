@@ -22,25 +22,25 @@
              });
       });
   	 $(document).ready(function(){
-			$(".sub_box > ul > li").click(function(){
+			$(".sub_box > ul > li>a").click(function(){
 				var liNum2 = $(this).index();
 				console.log( liNum2 );
-				$(".sub_box > ul > li").removeClass();
+				$(".sub_box > ul > li>a").removeClass();
 				$(this).addClass("sub_active");
 				$(".sub_box > div").hide();
-				$(".sub_box > div").eq(liNum).fadeIn();
+				$(".sub_box > div").eq(liNum2).fadeIn();
 				// $(".content_txt > div:eq("+liNum+")").fadeIn();
 			});
 		});
      </script>
 </head>
 <body>
-	<header id="main_header" class="clearfix">
+	<header id="sub_header" class="clearfix">
       <div id="header_top">
          <a href="index3.html"><img src="images/logo.png" alt=""></a>
          <nav id="main_menu">
             <ul class="clearfix">
-               <li><a href="sub01.html">소개</a></li>
+               <li><a href="sub01.html"class="on">소개</a></li>
                <li><a href="#">객실안내</a></li>
                <li><a href="#">포토갤러리</a></li>
                <li><a href="#">예약안내</a></li>
@@ -66,13 +66,30 @@
       </div>
       <div class="sub_box">
       	<ul class="clearfix">
-      		<li class="sub_active"><a href="#">소개</a></li>
+      		<li><a href="#" class="sub_active">소개</a></li>
       		<li><a href="#">경영이념</a></li>
       		<li><a href="#">핵심가치</a></li>
       		<li><a href="#">CI</a></li>
       	</ul>
-      </div>
+      </div>   
+      
    </header>
+   <div class="sub_content">
+      <div class="sub_content_wrap">
+           <div class="sub_hoem">
+               <img src="images/main_icon_01_11.png" alt=""class="home">
+              <img src="images/main_icon_01_12.png" alt=""class="home_r">
+              <img src="images/main_icon_01_12.png" alt=""class="home_rr">
+              <div class="text1">회사소개</div>
+              <div class="text2">경영이념</div>
+           </div>
+           <div class="title">
+              <h3>소개</h3>
+           </div>
+           <p class="hh">고객의 행복한 미래를 위해 끊임없이 도전하고 있습니다.</p>
+      </div>
+   </div>
+
    <!-- header끝 -->
    <div class="footer">
       <div class="footer_wrap">

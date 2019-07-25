@@ -1,6 +1,7 @@
 @charset"utf-8";
 
-* { font-family: 'NanumSquare', sans-serif !important; }
+*{ font-family: 'NanumSquare', sans-serif !important;}
+body{min-width:1260px;}
 
 #main_header{
 	height: 1950px; 
@@ -35,6 +36,21 @@
 	padding: 0 30px;
 	font-weight:bold;
 }
+#main_menu>ul>li>a:after{
+	content:"";
+	display:block;
+	width:10%;
+	height: 2px;
+	background-color:#ffdc1b;
+	transition:0.3s; 
+	margin: 0 auto;
+}
+#main_menu>ul>li>a:hover:after{
+	width: 100%;
+
+}
+
+
 #main_menu>ul>li>a.on{
 	color:white;
 }

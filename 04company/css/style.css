@@ -565,7 +565,9 @@ background: url(../images/sub_img_01_04.jpg) no-repeat ;
 	top:390px;left: 50%;
 	margin-left:-630px;
 }
-.sub_slider_wrap .sub_box ul{}
+.sub_slider_wrap .sub_box ul{
+	border-bottom: 1px solid orange;
+}
 .sub_slider_wrap .sub_box ul li{
 	float:left;
 	width: 315px;

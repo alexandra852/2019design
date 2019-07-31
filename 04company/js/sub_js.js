@@ -14,6 +14,17 @@
             $(".sub02_content_wrap > div").eq(i).fadeIn();
             return false;
          });
+         $(".toggleMenu").click(function(){
+            var myClass = $(this).attr("class");
+            console.log(myClass);
+         if(myClass == "toggleMenu"){
+            $(this).addClass("change");
+            $(".menuView").stop().animate({top:0},300);
+         }else{
+               $(this).removeClass("change");
+               $(".menuView").stop().animate({top:"-100%"},300)
+             }
+         });
 
 });
  

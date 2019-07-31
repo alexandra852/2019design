@@ -27,7 +27,7 @@ body{min-width:1260px;}
 	/*background-color: #0f0;*/
 	padding-right:100px;
 }
-
+.menuView{display:none;}
 #main_menu>ul{}
 #main_menu>ul>li{float: left;}
 #main_menu>ul>li>a{

@@ -6,7 +6,7 @@
 *{ font-family: 'NanumSquare', sans-serif !important;}
 
 @media all and (max-width:630px){
-	#main_header{height: 600px;}
+	/*#main_header{height: 600px;}*/
 	.slider_wrap ul li{height: 300px;}
 	.slider_wrap h3{font-size:2em;}
 	.slider_wrap p{font-size:0.7em;}

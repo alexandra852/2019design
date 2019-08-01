@@ -10,11 +10,11 @@
 	.slider_wrap ul li{height: 300px;}
 	.slider_wrap h3{font-size:2em;}
 	.slider_wrap p{font-size:0.7em;}
-	#main_header .content li {height: 250px;}
+	/*#main_header .content li {height: 250px;}*/
 }
 
 @media all and (max-width:520px){
-	#main_header{height: 550px;}
+	/*#main_header{height: 550px;}*/
 	.slider_wrap ul li{height: 200px;}
 }
 

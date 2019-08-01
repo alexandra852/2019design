@@ -2,7 +2,8 @@
 
 
 #main_header{
-	height: 1400px; 
+	width: 100%;
+	height: 1900px; 
 	position: relative;
 }
 #header_top{
@@ -24,7 +25,7 @@ display:none;
 	height:50px;
 	position:relative;
 	cursor:pointer;
-	z-index:2;
+	z-index:3;
 	display:block;
 }
 .menuView{
@@ -34,7 +35,7 @@ display:none;
 	background:#ffdc1b;
 	top: 0;
 	top:-100%; /*하면 전체적으로 왼쪽으로 간다*/
-	z-index:1;
+	z-index:2;
 }
 .menuView ul{padding-top: 200px;}
 .menuView ul li{}
@@ -177,7 +178,7 @@ display:none;
 	position: absolute;
 	bottom: 0;
 	/*background-color: white;*/
-	top: 350px;
+	top: 550px;
 }
 
 #main_header .content li{
@@ -266,7 +267,7 @@ display:none;
 	width:100%; 
 	position: absolute; 
 	left:50%;
-	top:30%;
+	top:20%;
 	transform:translateX(-50%);
 	/*background-color: #fff;*/
 	color: white;

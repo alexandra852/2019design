@@ -1,12 +1,23 @@
    $(document).ready(function(){
          $("#fullpage").fullpage({
          	anchors:["1st","2st","3st","4st","5st"],
+            afterRender: function () {
+                 //on page load, start the slideshow
+                  slideTimeout = setInterval(function () {
+                         $.fn.fullpage.moveSlideRight();
+                     }, 5000);
+             },
             afterLoad:function(anchorslink,index){
-            	if(index == 4){
+            	if(index == 3){
             		$("#onView").addClass("move");
             	}else{
             		$("#onView").removeClass("move");
             	}
+                 if(index == 3){
+                    $(".main").addClass("move1");
+                }else{
+                    $(".main").removeClass("move1");
+                }
             }
          });
          $(".toggleMenu").click(function(){
@@ -17,7 +28,9 @@
             $(".menuView").stop().animate({top:0},300);
          }else{
                $(this).removeClass("change");
-               $(".menuView").stop().animate({top:"-100%"},300)
+               $(".menuView").stop().animate({top:"-100%"},300);
              }
          });
+
+
    	});

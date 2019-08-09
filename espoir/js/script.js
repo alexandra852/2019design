@@ -1,11 +1,17 @@
    $(document).ready(function(){
          $("#fullpage").fullpage({
-         	anchors:["1st","2st","3st","4st","5st"],
+         	anchors:["1st","2st","3st","4st","5st","6st"],
+            // menu:"#topMenu",
+            navigation:true,
+            slidesNavigation:true,
+            navigationPosition:'right',
+            navigationTooltips:["menu1","menu2","menu3","menu4","menu5","menu6"],
             afterRender: function () {
                  //on page load, start the slideshow
                   slideTimeout = setInterval(function () {
+
                          $.fn.fullpage.moveSlideRight();
-                     }, 5000);
+                     }, 6000);
              },
             afterLoad:function(anchorslink,index){
             	if(index == 3){
@@ -31,6 +37,7 @@
                $(".menuView").stop().animate({top:"-100%"},300);
              }
          });
+         $("")
 
 
    	});

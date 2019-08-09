@@ -29,7 +29,7 @@
          position:fixed;right:80px; top:10px;z-index:2;
       }
    .toggleMenu div{
-         width:35px;height: 5px;background-color:white;
+         width:35px;height: 5px;background-color:#cdcdcd;
          position: absolute;border-radius:3px;right:30px;
          transition:0.3s;
          top:50%;
@@ -102,7 +102,11 @@
 .menu>ul>li>a:hover{
    color:#858992;
 }
-
+ .right{right: 0;}
+ #fp-nav ul li .fp-tooltip{
+   color:black;
+   margin-right: 20px;
+ }
 
 
 
@@ -141,11 +145,10 @@
          transition:0.3s;margin:0 auto;
       }
    .content a:hover{color:#e24b5b; font-weight:bold; border:1px solid #e24b5b;}
- .fp-controlArrow.fp-prev,
- .fp-controlArrow.fp-next{
-   display:none;
- }
-     
+    .fp-controlArrow.fp-prev,
+   .fp-controlArrow.fp-next{display:none;}
+
+
    .main{
       width: 400px;position:absolute;left:25%;transform:translate(-50%,-50%);color:black;
       text-align:center;
@@ -160,6 +163,46 @@
       }
    .main a:hover{color:white; font-weight:bold; border:1px solid white;}
       
+   .slide02{position: relative;}
+   .slide02>.button{
+      position: absolute;
+      background-color:#f7c8ba;
+      width:30px;
+      height:30px;
+      border-radius: 50%;
+      right:650px;
+      top:40%;
+      border: 1px solid #fff;
+   }
+   .slide02>.up{
+      position: absolute;
+      background-color:#f13849;
+      width:30px;
+      height:30px;
+      border-radius: 50%;
+      right:690px;
+      top:48%;
+      border: 1px solid #fff;
+   }
+   .slide02 .buttom_bar1{
+      width:10px;
+      height:1px;
+      background-color: black;
+      position: absolute;
+      border-radius:5px;
+      top:13.5px;
+      left:9px;
+   }
+   .slide02 .buttom_bar2{
+      width:11px;
+      height:1px;
+      background-color: black;
+      position: absolute;
+      border-radius:5px;
+      top:14px;
+      left:9px;
+      transform:rotate(-90deg)
+   }
 
    #page3 img{ 
          position: absolute;
@@ -175,6 +218,117 @@
    #page3 .main a{color:white; border:1px solid white;}
    #page3 .main a:hover{color:black; border:1px solid black;}
 
-   #onView{position: absolute;right:0;transition:0.6s;opacity:0;}
+   #page6{position: relative;}
+   #page6 .sns_logo{
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform:translateX(-50%);
+   }
+   #page6 .sns_logo>img{display:block;}
+   #page6 h3{
+      display:block;
+      text-align:center;
+      width: 100%;
+      /*background-color:pink;*/
+      position: absolute;
+      font-size:1.5em;
+      top:20%;
+   }
+   #page6 .sns{
+      width:1000px;
+      height:700px;
+      /*background-color:blue;*/
+      position: absolute;
+      bottom:0;
+      left:50%;
+      transform:translateX(-50%);
+   }
+   #page6 .sns ul{}
+   #page6 .sns ul li{
+      margin:2px 2px;
+      float:left;
+      width:300px;
+      height:220px;
+      /*border: 1px solid #000;*/
+   } 
+   #onView{
+      position: absolute;
+      right:0;
+      transition:0.6s;
+      opacity:0;
+   }
    #onView.move{right:50%; opacity:1;}
       
+   
+/*NEW&BEST*/
+
+#header_wrap{
+   width: 100%;
+   height: 100px;
+   /*background-color: pink;*/
+}
+#header_wrap>.header{
+   width: 1500px;
+   /*background-color:blue;*/
+   margin:0 auto;height: 100px;
+   position: relative;
+}
+.header>.sub_menu{position: absolute;}
+.header>.sub_menu>ul{}
+.header>.sub_menu>ul>li{
+   float:left;
+   width:90px;
+   /*background-color:yellow;*/
+}
+.header>.sub_menu>ul>li>a{
+   display:block;
+   line-height:50px;
+   text-align:center;
+   padding-top:20px;
+}
+.header>.sub_menu>ul>li>a:hover{
+   color:#62a4e1;
+}
+.sub_menu>ul>li>a:after{
+   content:"";
+   display:block;
+   width:5%;
+   height: 2px;
+   background-color:pink;
+   transition:0.3s; 
+   margin: 0 auto;
+   }
+.sub_menu>ul>li>a:hover:after{
+   width: 100%;
+
+}
+
+.header>.logo{
+   position: absolute;
+   left: 50%;
+   transform:translateX(-50%);
+   top: 15%;
+}
+.header>.logo>img{display:block;}
+
+#contents_wrap{
+   width: 100%;height:1000px;
+   background-color:pink;
+}
+#contents_wrap>.contents{
+   width: 1500px;height: 1000px;
+   background-color:gray;
+   margin:0 auto;
+   position: relative;
+   padding-top:10px;
+}
+.contents>#new{
+   position: absolute;
+   left: 50%; 
+   transform:translateX(-50%);
+   width: 150px;height: 50px;
+   border:none;
+   border-bottom:1px solid black;
+   text-indent:45px;
+}

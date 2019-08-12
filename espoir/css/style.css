@@ -221,7 +221,7 @@
    #page6{position: relative;}
    #page6 .sns_logo{
       position: absolute;
-      top: 10%;
+      top: 5%;
       left: 50%;
       transform:translateX(-50%);
    }
@@ -233,15 +233,15 @@
       /*background-color:pink;*/
       position: absolute;
       font-size:1.5em;
-      top:20%;
+      top:15%;
    }
    #page6 .sns{
       width:1000px;
       height:700px;
       /*background-color:blue;*/
       position: absolute;
-      bottom:0;
-      left:50%;
+      bottom:2%;
+      left:52%;
       transform:translateX(-50%);
    }
    #page6 .sns ul{}

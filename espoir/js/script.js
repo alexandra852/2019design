@@ -5,7 +5,7 @@
             navigation:true,
             slidesNavigation:true,
             navigationPosition:'right',
-            navigationTooltips:["menu1","menu2","menu3","menu4","menu5","menu6"],
+            navigationTooltips:["히트 아이템!","꾸띄르 벨벳","GIFT","BUY파데","뷰티테스트","in★"],
             afterRender: function () {
                  //on page load, start the slideshow
                   slideTimeout = setInterval(function () {

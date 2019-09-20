@@ -54,6 +54,9 @@ body{min-width:1260px;}
 #main_menu>ul>li>a.on{
 	color:white;
 }
+#main_menu>ul>li>a.on:after{
+	width:100%;
+}
 .main_box{
 	position: absolute; 
 	border: 1px solid #ffdc1b;

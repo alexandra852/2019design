@@ -9,7 +9,7 @@
          	var i = $(this).index();
          	console.log(i);
          	$(".sub_box > ul >li ").removeClass();
-         	$(this).addClass("on1");
+         	$(this).addClass("on");
             $(".sub02_content_wrap > div").hide();
             $(".sub02_content_wrap > div").eq(i).fadeIn();
             return false;
